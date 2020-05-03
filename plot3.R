@@ -8,7 +8,7 @@ rownames(newdata) <- 1:nrow(newdata)
 dim(newdata)
 attach(newdata)
 
-png(filename = "plot3.png",  width = 480, height = 480,units = "px", bg = "transparent")
+png(filename = "plot3.png",  width = 480, height = 480,units = "px", bg = "white")
 plot(DateTime, Sub_metering_1, type = "l",col = "black",xlab = "", ylab = "Energy sub metering")
 lines(DateTime, Sub_metering_2, col = "red")
 lines(DateTime, Sub_metering_3, col = "blue")
